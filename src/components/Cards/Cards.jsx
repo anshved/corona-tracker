@@ -19,7 +19,7 @@ if(!confirmed){
                         <Typography variant="h5">
                             <CountUp start = {0} end = {confirmed.value} duration = {3} separator = "," />
                         </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
+                        <Typography color="textSecondary">{new Date(lastUpdate).toLocaleString('en-US')}</Typography>
                         <Typography variant="body2">Number of Active cases of Covid-19</Typography>
                     </CardContent>
                 </Grid>
@@ -29,8 +29,7 @@ if(!confirmed){
                         <Typography variant="h5">
                             <CountUp start = {0} end = {recovered.value} duration = {3} separator = "," />
                         </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of Recovered cases of Covid-19</Typography>
+                        <Typography color="textSecondary">{new Date(lastUpdate).toLocaleString('en-US')}</Typography>                        <Typography variant="body2">Number of Recovered cases of Covid-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component = {Card} xs={12} md={3} className={cx(styles.card , styles.deaths)}>
@@ -39,8 +38,7 @@ if(!confirmed){
                         <Typography variant="h5">
                             <CountUp start = {0} end = {deaths.value} duration = {3} separator = "," />
                         </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of Deaths caused by Covid-19</Typography>
+                        <Typography color="textSecondary">{new Date(lastUpdate).toLocaleString('en-US')}</Typography>                        <Typography variant="body2">Number of Deaths caused by Covid-19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
