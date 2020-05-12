@@ -11,11 +11,12 @@ body {
 
 .font{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 550;
     margin-top: 50px;
     word-spacing: 10px;
     color: #4e4e4e;
+    text-align: center;
 }
 
 .link{
